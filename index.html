@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="public/kristalli.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');</style>
+    <title>Kristalli</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="menu-items">
+            <div class="menu-item">
+            <a class="menu-item" href="/home" target="_self" rel="noopener noreferrer">Home</a>
+            </div>
+            <div class="menu-item">
+                <a class="menu-item" href="/about" target="_blank" rel="noopener noreferrer">About</a>
+            </div>
+            <div class="menu-item">
+            <a class="menu-item" href="mailto:kristal.dev@proton.me" target="_blank" rel="noopener noreferrer">Email</a>
+            </div>
+            <div class="menu-item">
+            <a class="menu-item" href="https://youtu.be/Yw6u6YkTgQ4" target="_blank" rel="noopener noreferrer">Hello, World</a>
+            </div>
+        </div>
+        <div id="menu-background-pattern"></div>
+        <div id="menu-background-image"></div>
+</div>
+<script>
+const menu = document.getElementById("menu");
+
+Array.from(document.getElementsByClassName("menu-item"))
+    .forEach((item, index) => {
+        item.onmouseover = () => {
+            menu.dataset.activeIndex = index;
+        }
+    });
+</script>
+</body>
+</html>
