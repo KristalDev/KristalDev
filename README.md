@@ -1,1 +1,0 @@
-Hei, olen Kristalli :D 
